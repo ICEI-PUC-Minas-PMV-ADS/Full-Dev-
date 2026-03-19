@@ -10,7 +10,7 @@ A FullDev Online é uma plataforma web de indicador de cursos voltada a estudant
 
 ## Integrantes
 
-* Ronei
+* Ronei Santos de Miranda
 * Jennifer
 * Gabriela
 * Luan 
