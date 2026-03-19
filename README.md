@@ -1,41 +1,42 @@
-# TÍTULO DO PROJETO
+# FullDev Online — Indicador de Cursos
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de Aplicação Integrada`
 
-`SEMESTRE`
+`1º semestre/2026`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A FullDev Online é uma plataforma web de indicador de cursos voltada a estudantes e profissionais de Tecnologia da Informação. O objetivo é centralizar avaliações confiáveis de cursos, faculdades e plataformas de ensino, com critérios padronizados, verificação de identidade, moderação de conteúdo e canal oficial de resposta para instituições — promovendo transparência e apoio à decisão acadêmica e profissional.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* [Nome do Integrante 1]
+* [Nome do Integrante 2]
+* [Nome do Integrante 3]
+* [Nome do Integrante 4]
+* [Nome do Integrante 5]
 
-## Orientador
+## Orientador(a)
 
-* Nome completo do professor orientador
-
-## Instruções de utilização
-
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+* [Nome do(a) Orientador(a)]
 
 # Documentação
 
 <ol>
 <li><a href="documentos/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
 <li><a href="documentos/02-Especificação do Projeto.md"> Especificação do Projeto</a></li>
-<li><a href="documentos/03-Projeto de Interface.md"> Projeto de Interface</a></li>
-<li><a href="documentos/04-Testes de Software.md"> Testes de Software</a></li>
-<li><a href="documentos/05-Implantação.md"> Implantação</a></li>
+<li><a href="documentos/03-Metodologia.md"> Metodologia</a></li>
+<li><a href="documentos/04-Projeto de Interface.md"> Projeto de Interface</a></li>
+<li><a href="documentos/05-Template padrão do Site.md"> Template padrão do Site</a></li>
+<li><a href="documentos/06-Programação de Funcionalidades.md"> Programação de Funcionalidades</a></li>
+<li><a href="documentos/07-Referências Bibliográficas.md"> Referências Bibliográficas</a></li>
 </ol>
 
-# Código
+# Hospedagem
+
+A aplicação será publicada em ambiente acessível publicamente na Internet. O link de acesso será disponibilizado após o deploy.
+
+# Código-Fonte
 
 <li><a href="codigo-fonte/README.md"> Código Fonte</a></li>
 

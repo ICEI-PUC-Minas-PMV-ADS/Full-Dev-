@@ -1,104 +1,148 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="01-Documentação de Contexto.md"> Documentação de Contexto</a></span>
+## Perfis de Usuários
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. 
+<table>
+<tbody>
+<tr>
+<th colspan="2">Perfil 1: Usuário Autenticado</th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">
+Estudante ou profissional da área de Tecnologia da Informação, cadastrado na plataforma com CPF e LinkedIn verificados.
+</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>
+1. Acessar avaliações confiáveis e verificadas de cursos, faculdades e plataformas de ensino;<br>
+2. Publicar avaliações com critérios padronizados (didática, dificuldade, custo-benefício, aplicabilidade prática);<br>
+3. Filtrar cursos por stack tecnológica, senioridade e nota;<br>
+4. Interagir com publicações por meio de likes, dislikes, hype e comentários;<br>
+5. Salvar e favoritar cursos de interesse para consulta posterior;<br>
+6. Realizar questionário vocacional para identificar áreas de interesse.
+</td>
+</tr>
+</tbody>
+</table>
 
-## Usuários
-| Tipo de Usuário   | Descrição | Responsabilidades |
-|------------------|-----------|------------------|
-| **xxx** | xxxxx | xxxxx |
+<table>
+<tbody>
+<tr>
+<th colspan="2">Perfil 2: Marca (Atendente / Administrador)</th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">
+Representante oficial de uma instituição de ensino ou plataforma de cursos, vinculado à marca por CNPJ verificado.
+</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>
+1. Responder oficialmente às avaliações publicadas sobre sua instituição;<br>
+2. Monitorar métricas da marca (volume de publicações, média de notas, hype por período);<br>
+3. Exportar relatórios de desempenho em CSV;<br>
+4. Identificar tendências nas avaliações para melhoria contínua dos serviços.
+</td>
+</tr>
+</tbody>
+</table>
 
-### Exemplo
+<table>
+<tbody>
+<tr>
+<th colspan="2">Perfil 3: Moderador</th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">
+Usuário interno da plataforma responsável por garantir a integridade e qualidade do conteúdo publicado.
+</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>
+1. Aprovar ou recusar publicações com motivo obrigatório;<br>
+2. Remover conteúdo denunciado (posts, comentários e respostas de marca);<br>
+3. Gerenciar vínculos entre usuários e marcas;<br>
+4. Acessar logs de auditoria e fila de denúncias.
+</td>
+</tr>
+</tbody>
+</table>
 
-| Tipo de Usuário   | Descrição | Responsabilidades |
-|------------------|-----------|------------------|
-| **Administrador** | Gerencia a aplicação e os usuários. | Gerenciar usuários, configurar o sistema, acessar todos os relatórios. |
-| **Funcionário** | Usa a aplicação para suas tarefas principais. | Criar e editar registros, visualizar relatórios. |
 
+## Histórias de Usuários
 
-## Arquitetura e Tecnologias
+Com base na análise dos perfis de usuários, foram identificadas as seguintes histórias de usuários:
 
-Descreva brevemente a arquitetura definida para o projeto e as tecnologias a serem utilizadas. Sugere-se a criação de um diagrama de componentes da solução.
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR` |
+|--------------------|-------------------------------------|------------------------|
+|Usuário autenticado | criar uma conta na plataforma com CPF verificado | garantir que minha identidade seja validada e que minhas avaliações sejam confiáveis. |
+|Usuário autenticado | publicar uma avaliação de um curso com critérios padronizados (didática, dificuldade, custo-benefício) | ajudar outros profissionais de TI a tomarem decisões mais informadas sobre sua formação. |
+|Usuário autenticado | filtrar cursos por stack tecnológica e nível de senioridade | encontrar rapidamente avaliações relevantes para meu perfil e momento de carreira. |
+|Usuário autenticado | dar like, dislike e hype em publicações | expressar minha concordância com avaliações e aumentar a visibilidade de conteúdos relevantes. |
+|Usuário autenticado | comentar em publicações de outros usuários | trocar experiências e complementar informações sobre cursos avaliados. |
+|Usuário autenticado | salvar/favoritar cursos de interesse | acessar rapidamente as informações que desejo consultar futuramente. |
+|Usuário autenticado | responder um questionário vocacional | identificar áreas de tecnologia mais alinhadas ao meu perfil e interesses. |
+|Usuário autenticado | solicitar a exclusão permanente da minha conta | exercer meus direitos previstos na LGPD e remover meus dados da plataforma. |
+|Marca (Atendente) | responder oficialmente às avaliações que mencionam nossa instituição | dialogar com alunos de forma transparente e responsável, com selo de verificação. |
+|Marca (Administrador) | visualizar métricas de desempenho da minha marca | monitorar a reputação da instituição e identificar pontos de melhoria. |
+|Moderador | aprovar ou recusar publicações com motivo registrado | garantir a qualidade e integridade do conteúdo publicado na plataforma. |
+|Moderador | gerenciar a fila de denúncias | agir rapidamente sobre conteúdo inapropriado e proteger a comunidade. |
 
-## Project Model Canvas
-
-Deve ser desenvolvido a partir do microfundamento: Empreendedorismo e inovação.
-Colocar a imagem do modelo construído apresentando a proposta de solução.
-
-> **Links Úteis**:
-> Disponíveis em material de apoio do projeto
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
-
-Para mais informações, consulte os microfundamentos Fundamentos de Engenharia de Software e Engenharia de Requisitos de Software. 
-
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade | Etapa |Responsável |Complexidade |
-|------|-----------------------------------------|----|----|----|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | Etapa 1 | Maria | Alta |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |Etapa 2 | João | Média | 
+|ID    | Descrição do Requisito  | Prioridade |
+|------|-------------------------|------------|
+|RF-01| A aplicação deve permitir ao usuário criar uma conta fornecendo e-mail, senha e CPF. | ALTA |
+|RF-02| A aplicação deve validar o CPF do usuário, garantindo unicidade e imutabilidade após confirmação. | ALTA |
+|RF-03| A aplicação deve exigir vinculação de perfil do LinkedIn para que o usuário possa publicar avaliações. | ALTA |
+|RF-04| A aplicação deve implementar controle de acesso por papéis (RBAC): Usuário, Marca e Moderador. | ALTA |
+|RF-05| A aplicação deve permitir ao usuário editar seu perfil (avatar, nome, @username, bio, localidade, stack, senioridade). | MÉDIA |
+|RF-06| A aplicação deve oferecer um questionário vocacional para identificar áreas de interesse do usuário. | MÉDIA |
+|RF-07| A aplicação deve exibir um banner de onboarding até que o perfil esteja completo (CPF + LinkedIn + stack + senioridade). | BAIXA |
+|RF-08| A aplicação deve permitir que instituições solicitem cadastro de marca (CNPJ, razão social, site, e-mail corporativo). | ALTA |
+|RF-09| A aplicação deve exibir selo de verificação no perfil de marcas aprovadas e em suas respostas oficiais. | MÉDIA |
+|RF-10| A aplicação deve permitir vínculo entre usuário e marca, sujeito à aprovação do moderador. | MÉDIA |
+|RF-11| A aplicação deve permitir ao usuário publicar avaliações de cursos com campos padronizados (título, curso, dificuldade, didática, nota geral, stack, entre outros). | ALTA |
+|RF-12| A aplicação deve submeter publicações a um fluxo de moderação com filtro automático e revisão humana. | ALTA |
+|RF-13| A aplicação deve permitir ao autor editar sua publicação enquanto ela estiver em status "Em revisão". | MÉDIA |
+|RF-14| A aplicação deve exibir um feed de publicações ordenado por score, com seção de destaques e filtro por stack. | ALTA |
+|RF-15| A aplicação deve permitir ao usuário comentar e dar likes/dislikes em publicações. | ALTA |
+|RF-16| A aplicação deve permitir ao usuário dar "hype" em publicações, aumentando o score do post. | MÉDIA |
+|RF-17| A aplicação deve oferecer busca global por título, curso, instituição e stack, com paginação. | ALTA |
+|RF-18| A aplicação deve permitir filtros combináveis (stack, senioridade, nota, hype, recência, com/sem resposta de marca). | ALTA |
+|RF-19| A aplicação deve disponibilizar um centro de notificações (interações, status de publicação, moderação). | MÉDIA |
+|RF-20| A aplicação deve oferecer painel para marcas visualizarem menções, responderem oficialmente e exportarem métricas em CSV. | ALTA |
+|RF-21| A aplicação deve oferecer painel ao moderador com fila de publicações, fila de denúncias, aprovação em lote e logs de auditoria. | ALTA |
+|RF-22| A aplicação deve permitir ao usuário denunciar posts, comentários e respostas de marca. | ALTA |
+|RF-23| A aplicação deve registrar trilha de auditoria de todas as ações relevantes (aprovações, remoções, alterações de papéis). | ALTA |
+|RF-24| A aplicação deve exibir recomendações e avaliações personalizadas com base no perfil do usuário. | MÉDIA |
+|RF-25| A aplicação deve permitir ao usuário salvar/favoritar cursos para acesso rápido posterior. | MÉDIA |
+|RF-26| A aplicação deve oferecer visualização completa e detalhada de cada curso (conteúdo, nota, avaliações, resposta da marca). | ALTA |
+|RF-27| A aplicação deve permitir ao usuário solicitar a exclusão permanente de sua conta e dados. | ALTA |
 
-### Requisitos não Funcionais
+**Prioridade: Alta / Média / Baixa.
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+### Requisitos Não Funcionais
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+|ID     | Descrição do Requisito  | Prioridade |
+|-------|-------------------------|------------|
+|RNF-01| O site deve estar disponível para acesso na internet. | ALTA |
+|RNF-02| O site deve funcionar bem em celulares, tablets e computadores. | ALTA |
+|RNF-03| O site deve ter cores com bom contraste, facilitando a leitura. | MÉDIA |
+|RNF-04| O site deve funcionar nos principais navegadores: Chrome, Firefox, Edge e Safari. | ALTA |
+|RNF-05| As páginas do site devem carregar de forma rápida. | ALTA |
+|RNF-06| O site deve estar disponível quase o tempo todo, sem longos períodos fora do ar. | ALTA |
+|RNF-07| O site deve carregar imagens com agilidade e processar ações em segundo plano sem travar. | MÉDIA |
+|RNF-08| O código deve ser testado antes de ser publicado. | MÉDIA |
+|RNF-09| O site deve estar em português do Brasil, com possibilidade de outros idiomas no futuro. | BAIXA |
+|RNF-10| Quando algo der errado, o site deve exibir uma mensagem clara e amigável para o usuário. | MÉDIA |
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
-## Restrições
-
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
-## Diagrama de Caso de Uso
-
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-Para mais informações, consulte o microfundamento Engenharia de Requisitos de Software 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
-
-## Modelo da Base de Dados
-
-# Para banco de dados relacional:
-- Apresentar o MER (Modelo Entidade-Relacionamento)
-- Apresentar o Projeto Físico da Base de Dados (estrutura das tabelas, tipos de dados, chaves primárias e estrangeiras)
-# Para banco de dados NoSQL:
-Apresentar o Modelo da Base de Dados (estrutura dos documentos, coleções, ou grafos, conforme o tipo de NoSQL utilizado)
-
+**Prioridade: Alta / Média / Baixa.
