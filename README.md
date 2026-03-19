@@ -10,11 +10,11 @@ A FullDev Online é uma plataforma web de indicador de cursos voltada a estudant
 
 ## Integrantes
 
-* [Nome do Integrante 1]
-* [Nome do Integrante 2]
-* [Nome do Integrante 3]
-* [Nome do Integrante 4]
-* [Nome do Integrante 5]
+* Ronei
+* Jennifer
+* Gabriela
+* Luan 
+* João Pedro Pereira
 
 ## Orientador(a)
 
