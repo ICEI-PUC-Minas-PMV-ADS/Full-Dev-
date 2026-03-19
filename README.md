@@ -15,6 +15,7 @@ A FullDev Online é uma plataforma web de indicador de cursos voltada a estudant
 * Gabriela
 * Luan Lázaro Oliveira Matos
 * João Pedro Pereira
+* Lucas de Araujo Pedro
 
 ## Orientador(a)
 
